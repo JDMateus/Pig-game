@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/dice-6.svg" type="image/x-icon" />
+    <title>Pig game</title>
+  </head>
+  <body>
+    <section class="start">
+      <h1>Pig Game</h1>
+      <div>
+        <button id="englishBtn">English</button>
+        <button id="spanishBtn">Español</button>
+      </div>
+    </section>
+    <section class="english hidden">
+      <h1>Pig game</h1>
+      <h2>Play with a friend!</h2>
+      <p>
+        Players take turns to roll a single die as many times as they wish. <br /><br />
+
+        Each roll is added to their current score and the player's turn continues. <br /><br />
+
+        If the player rolls a 1, they score nothing and will be the next player's turn.
+        <br /><br />
+
+        If a player chooses to "hold", their current score is added to their total points and will
+        be the next player's turn. <br /><br />
+
+        The first player to score 100 or more points wins.
+      </p>
+      <br /><br />
+      <button class="new">New game</button>
+    </section>
+    <section class="spanish hidden">
+      <h1>Pig game</h1>
+      <h2>juega con un amigo!</h2>
+      <p>
+        Los jugadores toman turnos para tirar un solo dado las veces que quieran. <br /><br />
+
+        Cada resultado se acumula en su puntaje actual y el turno del jugador continua. <br /><br />
+
+        Si el jugador obtiene un 1, el puntaje actual se pierde y será el turno del siguiente
+        jugador.
+        <br /><br />
+
+        Si el jugador escoge guardar, el puntaje actual se sumará al acumulado y será el turno del
+        siguiente jugador. <br /><br />
+
+        El primer jugador que llegue a 100 puntos gana.
+      </p>
+      <br /><br />
+      <button class="new">Juega</button>
+    </section>
+
+    <main class="main hidden">
+      <section class="player player-0">
+        <div class="container-0">
+          <h1 class="title-0">Player 1</h1>
+          <p id="score-0" class="player-score">100</p>
+          <div class="current-box">
+            <p class="current-title">Current</p>
+            <p id="current-0" class="current-score">99</p>
+          </div>
+        </div>
+      </section>
+      <section class="player player-1">
+        <div class="container-1">
+          <h1 class="title-1">Player 2</h1>
+          <p id="score-1" class="player-score">100</p>
+          <div class="current-box">
+            <p class="current-title">Current</p>
+            <p id="current-1" class="current-score">99</p>
+          </div>
+        </div>
+      </section>
+      <div class="buttons-box">
+        <button class="new">New game</button>
+        <button class="hold">Hold</button>
+      </div>
+      <img class="dice" src="assets/dice-1.svg" alt="dice" />
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
